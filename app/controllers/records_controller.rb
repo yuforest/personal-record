@@ -36,6 +36,7 @@ class RecordsController < ApplicationController
   end
   def confirm
     @record = Record.new(record_params)
+    render :new if @record.invalid?
   end
   private
   def record_params
