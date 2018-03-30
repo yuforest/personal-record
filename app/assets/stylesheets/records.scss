@@ -1,0 +1,106 @@
+// Place all the styles related to the records controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+html{
+  font-size: 62.5%;
+  position: relative;
+  min-height: 100%;
+}
+body{
+  margin:0;
+  text-align:center;
+  font-size: 1.5rem;
+}
+
+
+header ul li {
+  list-style-type: none;
+  font-size:1.5rem;
+  float:left;
+  margin-right: 10px;
+  padding: 15px;
+}
+header ul {
+  margin: 0 auto;
+}
+header ul li a{
+  text-decoration:none;
+  color: #FFF;
+}
+header{
+  height: 60px;
+  background-color:green;
+}
+.clearfix:after{
+  content: "";
+  display: block;
+  clear: both;
+  
+}
+
+footer{
+  height: 60px;
+  background-color:green;
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+}
+footer p.copyright{
+  color:#FFF;
+  font-size: 1.3rem;
+}
+table.index{
+  text-align:center;
+}
+
+ul.index-list:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+ul.index-list li {
+  list-style-type: none;
+  padding: 10px;
+}
+li.float-right {
+  float: right;
+}
+li.float-left{
+  float:left;
+}
+ul.index-list{
+  border-bottom: 1px solid green;
+}
+
+.index{
+  width: 500px;
+  margin: 0 auto;
+}
+.button a{
+  text-decoration:none;
+  color: white;
+  font-weight: bold;
+  border-radius:4px;
+  padding: 5px;
+}
+.edit a{
+  background-color: green;
+  border: 1px solid green;
+}
+.delete a {
+  background-color: red;
+  border: 1px solid red;
+}
+.content{
+  font-size: 2.0rem;
+}
+
+.record-form{
+  font-size:1.7rem;
+  margin-bottom: 20px;
+}
+.top-image img{
+  width: 100%;
+  // height: 400px;
+}

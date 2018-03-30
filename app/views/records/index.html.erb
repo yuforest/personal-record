@@ -1,0 +1,15 @@
+
+<div class="container">
+<h2>記録一覧</h2>
+<p><%= notice %></p>
+  <div class="index">   
+    <% @records.each do |record| %>
+      <ul class="index-list">
+        <li class="float-left content"><%= record.content %></li>
+        <li class="float-right edit button"><%= link_to "編集", edit_record_path(record.id) %></li>
+        <li class="float-right delete button"><%= link_to "削除", record_path(record.id), method: :delete,data: {confirm: '本当に削除しますか？' } %></li>
+      </ul>  
+    <% end %>
+  </div>
+</table>
+</div>

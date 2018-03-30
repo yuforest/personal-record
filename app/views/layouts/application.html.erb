@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PersonalRecords</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header class="clearfix">
+    <ul>
+      <li><%= link_to 'HOME', '/' %></li>
+      <li><%= link_to '記録一覧', '/records' %></li>
+      <li><%= link_to '新規投稿', '/records/new' %></li>
+    </ul>
+    </header>
+    <%= yield %>
+    <footer>
+    <p class="copyright">© 2018 Yuta Omori</p>
+    </footer>
+  </body>
+</html>

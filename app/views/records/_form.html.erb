@@ -1,0 +1,16 @@
+<%= form_with(model: @record, local:true, url:choose_new_or_edit) do |form| %>
+<% if @record.errors.any? %>
+  <div id="error_explanation">
+    <p>空白もしくは140文字以上です。</p>
+    <p>再度入力してください！</p>
+  </div>
+  <% end %>
+
+<div class="record-form">
+  <span class="record-label"><%= form.label :content, "記録文:" %></span>
+  <span class="record-field"><%= form.text_field :content %></span>
+</div>
+
+<%= form.submit "記録する"  %>
+
+<% end %>

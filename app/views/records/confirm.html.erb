@@ -1,0 +1,14 @@
+<h2>以下の内容で記録する</h2>
+
+<%= form_with(model: @record, url: records_path, local: true) do |form| %>
+
+<%= form.hidden_field :content %>
+
+<p>本文:<%= @record.content %></p>
+<%= form.submit "記録する" %>
+<% end %>
+
+<%= form_with(model: @record, url: new_record_path, local: true, method: 'get') do |form| %>
+<%= form.hidden_field :content %>
+<%= form.submit "戻る", name: 'back'%>
+<% end %>
